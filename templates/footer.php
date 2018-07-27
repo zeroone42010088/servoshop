@@ -1,4 +1,17 @@
- </div>
+</section>
+            </div>
+            <!-- div filling-page -->
+
+        </main>
+        <!-- .content -->
+        <footer class="foot" style="position:absolute;  width:100%; ">
+            <div class="f-logo-l"><img src="../img/logo3.png" alt="kerneltlt"></div>
+            <div class="f-title">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
+            <div class="f-logo-r"><img src="../img/logo3.png" alt="kerneltlt"></div>
+        </footer>
+        <!-- .footer -->
+
+    </div>
     <!-- .wrapper -->
 
     <script>
@@ -61,7 +74,68 @@
     </script>
     <!-- {/literal} END JIVOSITE CODE -->
 
-    
+    <!-- загрузка изображений -->
+    <script>
+        /**
+         * Проверяет элемент на попадание в видимую часть экрана.
+         * Для попадания достаточно, чтобы верхняя или нижняя границы элемента были видны.
+         */
+        function isVisible(elem) {
+
+            var coords = elem.getBoundingClientRect();
+
+            var windowHeight = document.documentElement.clientHeight;
+
+            // верхняя граница elem в пределах видимости ИЛИ нижняя граница видима
+            var topVisible = coords.top > 0 && coords.top < windowHeight;
+            var bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
+
+            return topVisible || bottomVisible;
+        }
+
+        /**
+        Вариант проверки, считающий элемент видимым,
+        если он не более чем -1 страница назад или +1 страница вперед
+
+        function isVisible(elem) {
+
+          var coords = elem.getBoundingClientRect();
+
+          var windowHeight = document.documentElement.clientHeight;
+
+          var extendedTop = -windowHeight;
+          var extendedBottom = 2 * windowHeight;
+
+          // top visible || bottom visible
+          var topVisible = coords.top > extendedTop && coords.top < extendedBottom;
+          var bottomVisible = coords.bottom < extendedBottom && coords.bottom > extendedTop;
+
+          return topVisible || bottomVisible;
+        }
+        */
+
+        function showVisible() {
+            var imgs = document.getElementsByTagName('img');
+            for (var i = 0; i < imgs.length; i++) {
+
+                var img = imgs[i];
+
+                var realsrc = img.getAttribute('realsrc');
+                if (!realsrc) continue;
+
+                if (isVisible(img)) {
+                    img.src = realsrc;
+                    img.setAttribute('realsrc', '');
+                }
+            }
+
+        }
+
+        window.onscroll = showVisible;
+        showVisible();
+
+    </script> <!-- загрузка изображений -->
+
 </body>
 
 </html>
