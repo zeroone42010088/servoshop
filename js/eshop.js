@@ -51,5 +51,6 @@ function showMiniCart() {
     for (var w in cart) {
      out += w + ' --- ' +cart[w]+'<br>';   
     }
+    out+='<br><a href="cart.html">Корзина</a>';
     $('#mini-cart').html(out);
 }
