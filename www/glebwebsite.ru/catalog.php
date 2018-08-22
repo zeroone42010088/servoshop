@@ -5,10 +5,10 @@ require 'config.php';
 <html lang=ru style=height:100%>
 <head>
 <meta charset=utf-8 />
-<title>Электроника на продажу</title>
+<title>Ремонт электроники</title>
 <link rel="shortcut icon" type=image/png href=images/logo2.png>
-<meta name=keywords content="купить промышленную электронику оборудование, цена, энкодер" />
-<meta name=description content="Оборудование на продажу. Продаём промышленную электронику после ремонта" />
+<meta name=keywords content="Ремонт промышленной электроники и оборудования" />
+<meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />
 <link href=css/style.css rel=stylesheet>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/jquery-1.11.0.min.js"></script>
@@ -30,8 +30,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <header class=header>
 <div class=h-logo><a href=https://www.remontservo.ru/><img src=images/logo1.png alt=KERNEL></a></div>
 <div class=h-title>
-<h2 style="margin:1.8em 0 .8em;font-size:15px;color:#ff7e00;font-weight:bold">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ</h2>
-<h2>Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов</h2>
+<h2 style="margin:1.8em 0 .8em;font-size:15px;color:#ff7e00;font-weight:bold">РЕМОНТ СЕРВОПРИВОДОВ И СЕРВОДВИГАТЕЛЕЙ</h2>
+<h2>Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов Москва Санкт-Петербург и любой регион СНГ</h2>
 </div>
 <div class=h-contacts>
 <p><a href=tel:++7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
@@ -268,14 +268,14 @@ if($query->num_rows > 0){
 								echo '
 								<div class="col-md-4 product-left p-left">
 								<div class="product-main simpleCart_shelfItem">
-									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.png" alt="" /></a>
+									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
 										<h3>'.$row["name"].'</h3>
 										<p>'.$row["manefacter"].'</p> 
 										<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' руб.</span></h4>
 									</div>
 									<div class="srch srch1">
-										<span>-'.$row["sale"].'%</span>
+										<span>-'.$row["sale"].'. Диагностика и настройка</span>
 									</div>
 								</div>
 							</div>
@@ -289,14 +289,14 @@ if($query->num_rows > 0){
 								echo '
 								<div class="col-md-4 product-left p-left">
 								<div class="product-main simpleCart_shelfItem">
-									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.png" alt="" />
+									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="product-bottom">
 										<h3>'.$row["name"].'</h3>
 										<p>'.$row["manefacter"].'</p> 
 										<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' руб.</span></h4>
 									</div>
 									<div class="srch srch1">
-										<span>-'.$row["sale"].'%</span>
+										<span>-'.$row["sale"].'. Диагностика и настройка</span>
 									</div>
 								</div>
 							</div>
