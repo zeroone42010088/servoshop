@@ -1,0 +1,35 @@
+[Wed Aug 22 09:45:37 2018] [error] [client 188.226.220.27] PHP Notice:  Trying to get property of non-object in /var/www/user361953/data/www/glebwebsite.ru/catalog.php on line 266
+[Wed Aug 22 09:45:37 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo1.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:45:38 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo3.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:45:39 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo2.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:46:50 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo1.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:46:52 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo3.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:46:52 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo1.png, referer: http://glebwebsite.ru/catalog.php?id=2
+[Wed Aug 22 09:46:52 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo3.png, referer: http://glebwebsite.ru/catalog.php?id=2
+[Wed Aug 22 09:46:55 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo2.png, referer: http://glebwebsite.ru/catalog.php?id=2
+[Wed Aug 22 09:47:14 2018] [error] [client 52.114.75.71] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo2.png
+[Wed Aug 22 09:47:39 2018] [error] [client 81.28.165.207] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo1.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:47:41 2018] [error] [client 81.28.165.207] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo3.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:47:43 2018] [error] [client 81.28.165.207] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo2.png, referer: http://glebwebsite.ru/catalog.php
+2018/08/22 09:48:17 [warn] 197179#197179: *52807773 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/9/05/0000007059 while reading upstream, client: 81.28.165.207, server: glebwebsite.ru, request: "GET /phpmyadmin/js/get_scripts.js.php?scripts[]=jquery/jquery-1.8.3.min.js&scripts[]=ajax.js&scripts[]=keyhandler.js&scripts[]=jquery/jquery-ui-1.9.2.custom.min.js&scripts[]=jquery/jquery.sprintf.js&scripts[]=jquery/jquery.cookie.js&scripts[]=jquery/jquery.mousewheel.js&scripts[]=jquery/jquery.event.drag-2.2.js&scripts[]=jquery/jquery-ui-timepicker-addon.js&scripts[]=jquery/jquery.ba-hashchange-1.3.js HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.apache.sock:", host: "glebwebsite.ru"
+2018/08/22 09:48:17 [warn] 197179#197179: *52807775 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/0/06/0000007060 while reading upstream, client: 81.28.165.207, server: glebwebsite.ru, request: "GET /phpmyadmin/js/get_scripts.js.php?scripts[]=jquery/jquery.debounce-1.0.5.js&scripts[]=jquery/jquery.menuResizer-1.0.js&scripts[]=cross_framing_protection.js&scripts[]=rte.js&scripts[]=functions.js&scripts[]=navigation.js&scripts[]=indexes.js&scripts[]=common.js&scripts[]=codemirror/lib/codemirror.js&scripts[]=codemirror/mode/mysql/mysql.js HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.apache.sock:", host: "glebwebsite.ru"
+[Wed Aug 22 09:49:18 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo1.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:49:18 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo3.png, referer: http://glebwebsite.ru/catalog.php
+[Wed Aug 22 09:49:21 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/css/bootstrap.css.map
+[Wed Aug 22 09:50:05 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo1.png, referer: http://glebwebsite.ru/catalog.php?id=1
+[Wed Aug 22 09:50:05 2018] [error] [client 188.226.220.27] File does not exist: /var/www/user361953/data/www/glebwebsite.ru/images/logo3.png, referer: http://glebwebsite.ru/catalog.php?id=1
+[Wed Aug 22 09:54:35 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:54:36 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:54:37 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:54:38 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:54:38 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:54:38 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:54:38 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:54:38 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:55:04 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:55:04 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:55:05 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:55:06 2018] [error] [client 188.226.220.27] Directory index forbidden by Options directive: /var/www/user361953/data/www/glebwebsite.ru/
+[Wed Aug 22 09:55:44 2018] [error] [client 188.226.220.27] PHP Parse error:  syntax error, unexpected '<' in /var/www/user361953/data/www/glebwebsite.ru/contactform.php on line 13
+[Wed Aug 22 09:55:47 2018] [error] [client 188.226.220.27] PHP Parse error:  syntax error, unexpected '<' in /var/www/user361953/data/www/glebwebsite.ru/contactform.php on line 13
+[Wed Aug 22 09:55:55 2018] [error] [client 188.226.220.27] PHP Parse error:  syntax error, unexpected '<' in /var/www/user361953/data/www/glebwebsite.ru/contactform.php on line 13
