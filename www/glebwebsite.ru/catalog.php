@@ -23,7 +23,7 @@ require 'config.php';
             </div>
             <div class=h-title>
                 <h2 style="margin:1em 0 .8em;font-size:15px;color:#ff7e00;font-weight:bold">РЕМОНТ СЕРВОПРИВОДОВ И СЕРВОДВИГАТЕЛЕЙ</h2>
-                <h2>Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов Москва Санкт-Петербург СПБ Екатеринбург Томск и любой регион Страны СНГ</h2>
+                <h2 style="max-height: 100%;">Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов Москва Санкт-Петербург СПБ Екатеринбург Томск и любой регион <br> Страны СНГ и ближнее зарубежье</h2>
             </div>
             <div class=h-contacts>
                 <p><a href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
@@ -214,7 +214,7 @@ require 'config.php';
 
 
             <div class="about" style="padding:0;">
-                <div class="container" style="max-width: 100%;">
+                <div class="container" style="max-width: 100%; padding:0; margin:0;">
                     <div class="about-top grid-1">
                         <div class="col-md-4 about-left">
                             <figure class="effect-bubba">
@@ -234,7 +234,7 @@ require 'config.php';
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="col-md-4 about-left">
+                        <div class="col-md-4 about-left backround-color:green;">
                             <figure class="effect-bubba">
                                 <img class="img-responsive" src="img/our-works/servoprivod-deimotion-6103.jpg" alt="Сервопривод" />
                                 <figcaption>
@@ -252,7 +252,7 @@ require 'config.php';
             <div class="product">
                 <div class="container">
                     <div class="product-top">
-                        <div class="product-one">
+                        <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap;  ">
 
 
                             <?php
@@ -262,11 +262,11 @@ $query = $db->query("SELECT * FROM products");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
 								echo '
-								<div class="col-md-4 product-left p-left">
-								<div class="product-main simpleCart_shelfItem">
+								<div class="col-md-4 product-left p-left" style="max-width:30%;">
+								<div class="product-main simpleCart_shelfItem style="padding:1em;">
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
-										<h3>'.$row["name"].'</h3>
+										<h3 style="margin-left: 5%; max-width: 80%; word-break: break-all;">'.$row["name"].'</h3>
 										<p>'.$row["manefacter"].'</p> 
 										<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></h4>
 									</div>
