@@ -1192,12 +1192,16 @@ body {
 
 .nav {
     position: relative;
-    height: 45px;
+    /*height: 45px;*/
+    height: 85px;
     width: 100%;
     background: lightgray;
     background: linear-gradient(to top, lightgray, white);
     box-shadow: 0 0 5px #000;
     z-index: 50;
+}
+@media (max-width: 1300px) { /* это будет показано при разрешении монитора до 930 пикселей */
+  .nav {height:85px;} /* основное содержимое занимает всё пространство окна */
 }
 
 .n-menu {
