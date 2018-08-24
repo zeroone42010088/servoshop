@@ -9,11 +9,9 @@ require 'config.php';
     <title>Ремонтируемое оборудование</title>
     <link rel="shortcut icon" type=image/png href=img/logo2.png>
     <meta name=keywords content="FANUC DELTA ABB OMRON" />
-    <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />
-   <!-- <link href="css/style-watch.css" rel="stylesheet" type="text/css" media="all" /> -->    
-    <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />   
     <link href=css/style.css rel=stylesheet>
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link href=css/shop.css rel=stylesheet>  
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
@@ -23,7 +21,7 @@ require 'config.php';
             </div>
             <div class=h-title>
                 <h2 style="margin:1em 0 .8em;font-size:15px;color:#ff7e00;font-weight:bold">РЕМОНТ СЕРВОПРИВОДОВ И СЕРВОДВИГАТЕЛЕЙ</h2>
-                <h2 style="max-height: 100%;">Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов Москва Санкт-Петербург СПБ Екатеринбург Томск и любой регион <br> Страны СНГ и ближнее зарубежье</h2>
+                <h2>Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов Москва Санкт-Петербург СПБ Екатеринбург Томск и любой регион <br> Страны СНГ и ближнее зарубежье</h2>
             </div>
             <div class=h-contacts>
                 <p><a href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
@@ -44,7 +42,7 @@ require 'config.php';
                     <li><a class=a-public href=contacts.html>контакты</a></li>
                     <li><a class=a-public href=list-publications.html>публикации</a></li>
                     <li><a class=a-public href=sell.html>на продажу</a></li>
-                     <li><a class=a-public style="background:#ff7e00;background:linear-gradient(to top,#FF7E00,white)" href=sell.html>Часть электроники, которую мы ремонтируем</a></li>     
+                     <li><a class=a-public style="background:#ff7e00;background:linear-gradient(to top,#FF7E00,white)" href=sell.html>часть электроники, которую мы ремонтируем</a></li>     
                 </ul>
             </div>
         </nav>
@@ -208,7 +206,7 @@ require 'config.php';
 
             <div class="logo">
                 <a href="index.html">
-                    <h2 style="text-align:center;">Ремонтируем промышленное оборудование и электронику</h2>
+                    <h2 style="text-align:center; margin-top: 10px;">Ремонтируем промышленное оборудование и электронику</h2>
                 </a>
             </div>
 
@@ -263,7 +261,7 @@ if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
 								echo '
 								<div class="col-md-4 product-left p-left" style="max-width:30%;">
-								<div class="product-main simpleCart_shelfItem style="padding:1em;">
+								<div class="product-main simpleCart_shelfItem style="padding:1em; margin: 5%;">
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
 										<h3 style="margin-left: 5%; max-width: 80%; word-break: break-all;">'.$row["name"].'</h3>

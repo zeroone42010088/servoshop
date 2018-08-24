@@ -1,4 +1,0 @@
-178.154.171.12 - - [22/Aug/2018:04:48:41 +0300] "GET /robots.txt HTTP/1.0" 404 295 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
-178.154.171.12 - - [22/Aug/2018:04:48:41 +0300] "GET /robots.txt HTTP/1.1" 404 307 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
-141.8.142.42 - - [22/Aug/2018:04:48:45 +0300] "GET / HTTP/1.0" 403 289 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
-141.8.142.42 - - [22/Aug/2018:04:48:45 +0300] "GET / HTTP/1.1" 403 301 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
