@@ -32,17 +32,17 @@ require 'config.php';
         <nav class=nav>
             <div class=n-menu>
                 <ul class=menu>
-                    <li><a class=a-public href=../index.html>главная</a></li>
-                    <li><a class=a-public href=about_us.html>о нас</a></li>
-                    <li><a class=a-public href=guarantees.html>гарантии</a></li>
-                    <li><a class=a-public href=our-works.html>выполненные работы</a></li>
-                    <li><a class=a-public href=repairs.html>ремонт электроники</a></li>
-                    <li><a class=a-public href=delivery.html>доставка в ремонт</a></li>
-                    <li><a class=a-public href=departure.html>выезд специалиста</a></li>
-                    <li><a class=a-public href=contacts.html>контакты</a></li>
-                    <li><a class=a-public href=list-publications.html>публикации</a></li>
-                    <li><a class=a-public href=sell.html>на продажу</a></li>
-                     <li><a class=a-public style="background:#ff7e00;background:linear-gradient(to top,#FF7E00,white)" href=sell.html>часть электроники, которую мы ремонтируем</a></li>     
+                    <li><a class=a-public href=index.html>главная</a></li>
+                    <li><a class=a-public href=pages/about_us.html>о нас</a></li>
+                    <li><a class=a-public href=pages/guarantees.html>гарантии</a></li>
+                    <li><a class=a-public href=pages/our-works.html>выполненные работы</a></li>
+                    <li><a class=a-public href=pages/repairs.html>ремонт электроники</a></li>
+                    <li><a class=a-public href=pages/delivery.html>доставка в ремонт</a></li>
+                    <li><a class=a-public href=pages/departure.html>выезд специалиста</a></li>
+                    <li><a class=a-public href=pages/contacts.html>контакты</a></li>
+                    <li><a class=a-public href=pages/list-publications.html>публикации</a></li>
+                    <li><a class=a-public href=pages/sell.html>на продажу</a></li>
+                     <li><a class=a-public style="background:#ff7e00;background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>часть электроники, которую мы ремонтируем</a></li>     
                 </ul>
             </div>
         </nav>
@@ -281,7 +281,7 @@ $query = $db->query("SELECT * FROM products where id = '".$_GET['id']."'");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
 								echo '
-								<div class="col-md-4 product-left p-left">
+								<div class="col-md-4 product-left p-left" style="margin:auto;">
 								<div class="product-main simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="product-bottom">
