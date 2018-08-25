@@ -6,7 +6,7 @@ require 'config.php';
 
 <head>
     <meta charset=utf-8 />
-    <title>Ремонтируемое оборудование</title>
+    <title>Ремонтируем оборудование и электронику</title>
     <link rel="shortcut icon" type=image/png href=img/logo2.png>
     <meta name=keywords content="FANUC DELTA ABB OMRON" />
     <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />   
@@ -40,7 +40,7 @@ require 'config.php';
                     <li><a class=a-public href=pages/delivery.html>доставка в ремонт</a></li>
                     <li><a class=a-public href=pages/departure.html>выезд специалиста</a></li>
                     <li><a class=a-public href=pages/contacts.html>контакты</a></li>
-                    <li><a class=a-public href=pages/list-publications.html>публикации</a></li>
+                   <!-- <li><a class=a-public href=pages/list-publications.html>публикации</a></li>-->
                     <li><a class=a-public href=pages/sell.html>на продажу</a></li>
                      <li><a class=a-public style="background:#ff7e00;background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>часть электроники, которую мы ремонтируем</a></li>     
                 </ul>
@@ -254,9 +254,15 @@ require 'config.php';
 
 
                             <?php
-if(empty($_GET['id'])) {
+                            $page = 1; // текущая страница
+$kol = 10;  //количество записей для вывода
+$art = ($page * $kol) - $kol; // определяем, с какой записи нам выводить
 
-$query = $db->query("SELECT * FROM products");
+                            if(empty($_GET['id'])) { 
+    
+
+$query = $db->query("SELECT * FROM products LIMIT $art,$kol",$db);
+
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
 								echo '
@@ -298,8 +304,19 @@ if($query->num_rows > 0){
 
 } }
 
-} ?>
+} 
+                            // Генерируем ссылки на страницы
+for ($i = 1; $i <= $totalPages; $i++){
+    if ($iCurr == $i){
+        echo "<b><u><a href=index.php?page=$i>$i</a></u></b> ";
+    }
+    else {
+        echo "<a href=index.php?page=$i>$i</a> ";
+    }
+    
+}
                             
+                            ?>
 
         </main>
         <footer class=foot style=position:absolute;width:100%>
