@@ -254,9 +254,20 @@ require 'config.php';
 
 
                             <?php
-if(empty($_GET['id'])) {
+if (isset($_GET['pageno'])) {
+    $pageno = $_GET['pageno'];
+} else {
+    $pageno = 1;
+}
+$no_of_records_per_page = 13;
+$offset = ($pageno-1) * $no_of_records_per_page;
 
-$query = $db->query("SELECT * FROM products");
+
+if(empty($_GET['id'])) {
+$result = $db->query("SELECT COUNT(*) FROM products");
+$total_rows = $result->fetch_array();
+$total_pages = ceil($total_rows[0] / $no_of_records_per_page);
+$query = $db->query("SELECT * FROM products LIMIT $offset, $no_of_records_per_page");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
 								echo '
@@ -299,7 +310,20 @@ if($query->num_rows > 0){
 } }
 
 } ?>
-                            
+</div>
+</div>
+<? if(empty($_GET['id'])) { ?>
+<ul class="pagination" style="display:flex">
+    <li><a href="?pageno=1">Первая</a></li>
+    <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
+        <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Предыдущая</a>
+    </li>
+    <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
+        <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>">Следующая</a>
+    </li>
+    <li><a href="?pageno=<?php echo $total_pages; ?>">Последняя</a></li>
+</ul> 
+<? } ?>                           
 
         </main>
         <footer class=foot style=position:absolute;width:100%>
@@ -334,7 +358,7 @@ if($query->num_rows > 0){
         <script src="js/jquery.easydropdown.js"></script>
         <!--scripts-->
 
-        <!-- yandex metrica begin -->
+        <!-- yandex metrica begin --> <!--
         <script>
             (function(d, w, c) {
                 (w[c] = w[c] || []).push(function() {
@@ -363,7 +387,7 @@ if($query->num_rows > 0){
                 }
             })(document, window, "yandex_metrika_callbacks");
 
-        </script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript>
+        </script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript> -->
         <!-- yandex metrica complete -->
         <!-- форма обратной связи -->
         <script>
